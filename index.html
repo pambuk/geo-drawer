@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Polygon Drawer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Geo Polygon Drawer</h1>
+        
+        <div class="input-section">
+            <h2>Input Polygon Points</h2>
+            <p>Enter coordinates as "latitude,longitude" pairs, one per line:</p>
+            <textarea id="pointsInput" placeholder="41.12,-71.34&#10;41.15,-71.30&#10;41.18,-71.35&#10;41.15,-71.40"></textarea>
+            <button id="drawPolygon">Draw Polygon</button>
+        </div>
+        
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+        
+        <div class="point-check-section">
+            <h2>Check if Point is Inside Polygon</h2>
+            <div class="input-group">
+                <input type="text" id="checkPointInput" placeholder="latitude,longitude (e.g., 41.15,-71.35)">
+                <button id="checkPoint">Check Point</button>
+            </div>
+            <div id="result"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
